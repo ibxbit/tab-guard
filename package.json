@@ -1,0 +1,35 @@
+{
+  "name": "tab-guard",
+  "version": "1.0.0",
+  "description": "A Chrome extension that helps you stay focused by blocking distracting websites during focus sessions",
+  "main": "src/background/background.js",
+  "scripts": {
+    "build": "echo 'No build process needed for Chrome extension'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linter configured'",
+    "package": "zip -r tab-guard.zip . -x '*.git*' 'node_modules/*' '*.DS_Store'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "productivity",
+    "focus",
+    "blocking",
+    "time-management",
+    "browser-extension"
+  ],
+  "author": "Tab Guard Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/tab-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/tab-guard/issues"
+  },
+  "homepage": "https://github.com/yourusername/tab-guard#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+} 

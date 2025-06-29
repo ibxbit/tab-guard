@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Guard",
+  "version": "2.0.0",
+  "description": "A powerful focus extension that blocks distracting websites during focus sessions with customizable themes, notifications, and motivation quotes.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "notifications",
+    "commands"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Tab Guard - Focus Mode",
+    "default_icon": {
+      "16": "assets/tab-guard-logo.png",
+      "32": "assets/tab-guard-logo.png",
+      "48": "assets/tab-guard-logo.png",
+      "128": "assets/tab-guard-logo.png"
+    }
+  },
+  "icons": {
+    "16": "assets/tab-guard-logo.png",
+    "32": "assets/tab-guard-logo.png",
+    "48": "assets/tab-guard-logo.png",
+    "128": "assets/tab-guard-logo.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+G",
+        "mac": "Command+Shift+G"
+      },
+      "description": "Toggle focus mode"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "public/blocked.html",
+        "public/blocked.css",
+        "public/blocked.js",
+        "assets/tab-guard-logo.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tab Guard</title>
+  <link rel="stylesheet" href="popup.css" />
+
+  <!-- Loads the Poppins font from Google Fonts to be used in the popup UI. -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="title">
+        <span>T</span>
+        <span>a</span>
+        <span>b</span>
+        <span>&nbsp;</span>
+        <span>G</span>
+        <span>u</span>
+        <span>a</span>
+        <span>r</span>
+        <span>d</span>
+        <span>&nbsp;</span>
+        <span>🔐</span>
+      </h1>
+      <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Focus Mode Section -->
+      <div class="section" id="focusSection">
+        <div class="section-header">
+          <h2>Focus Session</h2>
+        </div>
+        <div id="focusSetup">
+          <div class="input-group">
+            <input type="number" id="focusMinutes" class="input-field" min="1" max="180" value="25" placeholder="Minutes">
+            <input type="password" id="passcode" class="input-field" maxlength="4" placeholder="Set 4-digit passcode">
+            <button id="startFocusBtn" class="btn btn-primary">Start</button>
+          </div>
+        </div>
+        <div id="focusActive" class="hidden">
+          <div class="timer-card">
+            <span id="countdown" class="countdown-time">25:00</span>
+          </div>
+          <div class="input-group">
+            <input type="password" id="unlockPasscode" class="input-field" maxlength="4" placeholder="Enter passcode to stop">
+            <button id="stopFocusBtn" class="btn btn-secondary">Stop</button>
+          </div>
+        </div>
+        <p class="status-text" id="statusText">Focus mode is off</p>
+      </div>
+
+      <!-- Site Management Section -->
+      <div class="section">
+        <h2>Blocked Sites</h2>
+        <div class="input-group">
+          <input type="text" id="blockedSiteInput" placeholder="Enter site to block (e.g., facebook.com)" class="input-field">
+          <button id="addBlockedBtn" class="btn btn-primary">Add</button>
+        </div>
+        <div class="site-list" id="blockedSitesList"></div>
+      </div>
+
+      <div class="section">
+        <h2>Allowed Sites</h2>
+        <div class="input-group">
+          <input type="text" id="allowedSiteInput" placeholder="Enter site to allow (e.g., gmail.com)" class="input-field">
+          <button id="addAllowedBtn" class="btn btn-secondary">Add</button>
+        </div>
+        <div class="site-list" id="allowedSitesList"></div>
+      </div>
+
+      <!-- Settings Section -->
+      <div class="section">
+        <h2>Customization</h2>
+        
+        <!-- Custom Blocked Message -->
+        <div class="setting-group">
+          <label for="customMessage" class="setting-label">Custom Blocked Message:</label>
+          <input type="text" id="customMessage" class="input-field" placeholder="Enter your custom message">
+          <button id="saveMessageBtn" class="btn btn-small">Save</button>
+        </div>
+
+        <!-- Motivation Quote -->
+        <div class="setting-group">
+          <label class="setting-label">Motivation Quote:</label>
+          <div class="quote-container">
+            <p id="currentQuote" class="quote-text"></p>
+            <button id="nextQuoteBtn" class="btn btn-small">Next Quote</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notifications Section -->
+      <div class="section">
+        <h2>Notifications</h2>
+        
+        <div class="setting-group">
+          <label class="setting-label">
+            <input type="checkbox" id="sessionCompletionNotif" class="checkbox">
+            Session completion alerts
+          </label>
+        </div>
+
+        <div class="setting-group">
+          <label class="setting-label">
+            <input type="checkbox" id="distractionAttemptsNotif" class="checkbox">
+            Distraction attempt notifications
+          </label>
+        </div>
+
+        <div class="setting-group">
+          <label class="setting-label">
+            <input type="checkbox" id="dailySummaryNotif" class="checkbox">
+            Daily focus summary
+          </label>
+        </div>
+      </div>
+
+      <!-- Statistics Section -->
+      <div class="section">
+        <h2>Focus Statistics</h2>
+        <div class="stats-container">
+          <div class="stat-item">
+            <span class="stat-label">Total Sessions:</span>
+            <span class="stat-value" id="totalSessions">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Focus Time:</span>
+            <span class="stat-value" id="totalFocusTime">0h 0m</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Distraction Attempts:</span>
+            <span class="stat-value" id="distractionAttempts">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+  </div>
+
+  <script src="../utils/storage.js" type="module"></script>
+  <script src="popup.js" type="module"></script>
+</body>
+</html>
