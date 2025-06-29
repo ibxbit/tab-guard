@@ -42,7 +42,7 @@ Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by
 ---
 
 ## 💡 How It Was Born
-> I built this for my dorm mate who said, "Hey bro, I can't control myself after I try to study—I end up on typing websites!" Tired of seeing him distracted, I created this tool to enforce focus during study time.
+> I built this for my dorm mate who said, "Hey bro, I can't control myself after I try to study, I end up on typing websites!" Tired of seeing him distracted, I created this tool to enforce focus during study time.
 
 ---
 
