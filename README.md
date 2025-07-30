@@ -1,6 +1,6 @@
 # Tab Guard 🔐
  
-**Block distractions. Stay focused. Crush your goals.!**
+**Block distractions. Stay focused. Crush your goals.!** 
 
 --- 
 
