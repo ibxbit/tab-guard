@@ -51,7 +51,7 @@ Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by
 
 ---
 
-## 🛠️ Contributing
+## 🛠️ Contributing 
 Pull requests and suggestions are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
