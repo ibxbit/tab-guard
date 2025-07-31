@@ -4,7 +4,6 @@
  
 ---    
 
-
 ![Tab Guard Logo](assets/tab-guard-logo.png)
  
 ## What is Tab Guard?
