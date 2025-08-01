@@ -11,7 +11,7 @@ Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by
   
 ---     
     
-## ✨ Features  
+## ✨ Features   
 - **Focus Sessions:** Set a timer and a passcode to lock yourself into focus mode.
 - **Instant Blocking:** Distracting sites are blocked instantly—no excuses! 
 - **Modern UI:** Glassmorphism, animated backgrounds, and a classic DVD logo bounce.
