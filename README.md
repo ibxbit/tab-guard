@@ -20,7 +20,7 @@ Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by
 - **Statistics:** Track your focus sessions, time, and distraction attempts.
 - **Keyboard Shortcuts:** Quick toggle for power users.
   
----
+--- 
    
   
 ## 🚀 Installation 
