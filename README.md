@@ -1,7 +1,7 @@
  # Tab Guard 🔐 
  
 **Block distractions. Stay focused. Crush your goals.!**  
-              
+               
 ---              
               
 ![Tab Guard Logo](assets/tab-guard-logo.png)        
