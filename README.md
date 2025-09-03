@@ -22,7 +22,7 @@ Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by
                         
 ---               
    
-                    
+                     
               
 ## 🚀 Installation     
 1. **Clone this repo:**     
