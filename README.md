@@ -10,7 +10,7 @@
 Tab Guard is a modern, beautiful Chrome extension that helps you stay focused by blocking distracting websites during your study or work sessions. With customizable themes, motivational quotes, and a timer/passcode system, Tab Guard is your digital accountability partner.         
                             
 ---                                             
-     
+      
 ## ✨ Features                                          
 - **Focus Sessions:** Set a timer and a passcode to lock yourself into focus mode.                                              
 - **Instant Blocking:** Distracting sites are blocked instantly—no excuses!                                          
