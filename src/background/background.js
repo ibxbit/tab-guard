@@ -6,7 +6,7 @@ import {
   getNotificationSettings,
   incrementDistractionAttempts,
   recordFocusSession
-} from '../utils/storage.js';
+} from '../utils/storage.js'; 
 
 const BLOCKED_PAGE_URL = chrome.runtime.getURL('public/blocked.html'); 
 
