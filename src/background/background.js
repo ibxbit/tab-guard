@@ -8,7 +8,7 @@ import {
   recordFocusSession
 } from '../utils/storage.js'; 
 
-const BLOCKED_PAGE_URL = chrome.runtime.getURL('public/blocked.html'); 
+const BLOCKED_PAGE_URL = chrome.runtime.getURL('public/blocked.html');  
 
 // Helper to get active focus session
 async function getActiveFocusSession() {  
