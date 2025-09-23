@@ -1,7 +1,7 @@
 import {
   initializeStorage,
   getBlockedSites,
-  getAllowedSites,
+  getAllowedSites, 
   getCustomBlockedMessage,
   getNotificationSettings,
   incrementDistractionAttempts,
