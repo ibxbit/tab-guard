@@ -20,7 +20,7 @@ async function getActiveFocusSession() {
       } else {
         resolve(null); 
       } 
-    });
+    }); 
   }); 
 }
 
