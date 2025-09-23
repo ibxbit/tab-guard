@@ -18,7 +18,7 @@ async function getActiveFocusSession() {
       if (session && session.active && session.endTime > Date.now()) {
         resolve(session);
       } else {
-        resolve(null);
+        resolve(null); 
       }
     });
   }); 
