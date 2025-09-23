@@ -11,7 +11,7 @@ import {
 const BLOCKED_PAGE_URL = chrome.runtime.getURL('public/blocked.html');
 
 // Helper to get active focus session
-async function getActiveFocusSession() {
+async function getActiveFocusSession() { 
   return new Promise((resolve) => {
     chrome.storage.local.get(['focusSession'], (result) => {
       const session = result.focusSession;
