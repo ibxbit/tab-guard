@@ -21,7 +21,7 @@ async function getActiveFocusSession() {
         resolve(null);
       }
     });
-  });
+  }); 
 }
 
 // Initialize background script
